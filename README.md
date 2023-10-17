@@ -4,15 +4,34 @@ A guide for working on projects with the Cognition in Collectives Lab
 
 ## Introduction
 
-## Onboarding
-
-### Slack
-
-### GitHub
+TODO.
 
 ## Setting up your computer
 
 To work on our projects from your computer, you will need to install & configure a few primary software services and tools. Some of these are graphical user interfaces (GUIs), while others are command line interaces (CLIs).
+
+### Git
+
+#### Installation
+
+To see if your computer already has the `git` CLI installed, open your Terminal application and run
+
+```bash
+git --version
+```
+
+If it returns `git version 2.39.1` or higher, move to the next subsection.
+
+#### Configuration
+
+If you've never configured `git` on your computer before, run
+
+```bash
+git config --global user.name "First Last"
+git config --global user.email youremail@example.com
+```
+
+making sure to (a) replace `"First Last"` with your first and last name within the quotes and (b) replace `youremail@example.com` with the email address you use to log in to GitHub.
 
 ### JavaScript environment
 
