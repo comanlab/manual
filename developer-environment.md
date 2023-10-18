@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Getting started
+# Developer environment
 
 ## Setting up your computer
 
