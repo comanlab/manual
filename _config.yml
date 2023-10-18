@@ -1,12 +1,12 @@
 theme: jekyll-theme-minimal
-title: CiCL Manual Template
-description: A simple template based on minimal jekyll theme
-show_downloads: False
+title: CiCL Manual
+description: A guide to working with the Cognition in Collectives Lab at Princeton University
+show_downloads: True
 navigation:
   - title: Home
     url: /
-  - title: Setup
-    url: setup
+  - title: Getting started
+    url: getting-started
 
 # Site theme adapted from https://kbsezginel.github.io/gh-pages-template/
 #

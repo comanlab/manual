@@ -1,77 +1,50 @@
 # CiCL Manual
 
-A guide for working on projects with the Cognition in Collectives Lab.
+A guide for working on projects with the Cognition in Collectives Lab using GitHub Pages.
+To view the manual, go to [manual.comanlab.com](https://manual.comanlab.com).
+If you'd like to contribute to the manual here on GitHub, please read through this README file to familiarize yourself with how to do so.
 
-## Introduction
+[TODO.]
 
-TODO.
+## Configuring the site
 
-## Setting up your computer
+Edit the `_config.yml` file and change the site title and description.
 
-To work on our projects from your computer, you will need to install & configure a few primary software services and tools. Some of these are graphical user interfaces (GUIs), while others are command line interaces (CLIs).
+## Adding pages
 
-### Git
+To add a new page you need to create a new markdown file with the name of your choice.
+For example here `setup.md` file is used to generate content for the `setup` page.
 
-#### Installation
+### Layouts
 
-To see if your computer already has the `git` CLI installed, open your Terminal application and run
+There are currently two layouts: `default` and `full`.
 
-```bash
-git --version
+In the `default` layout a sidebar containing navigation is present whereas in `full` layout the full page is reserved for page content.
+
+The `full` layout can be selected by adding a yaml front matter to the markdown/html file:
+
+```
+---
+layout: full
+---
 ```
 
-If it returns `git version 2.39.1` or higher, move to the next subsection.
+## Adding links to the navigation bar
 
-#### Configuration
+The navigation bar can be controlled by modifying the `_config.yml` file.
+Under navigation enter the title you would like to see on the sidebar and enter the relative link to that page.
 
-If you've never configured `git` on your computer before, run
+## More customization
 
-```bash
-git config --global user.name "First Last"
-git config --global user.email youremail@example.com
-```
+Take a look at minimal theme page to see all the theme options: [click here](https://pages-themes.github.io/minimal/).
 
-making sure to (a) replace `"First Last"` with your first and last name within the quotes and (b) replace `youremail@example.com` with the email address you use to log in to GitHub.
+## Resources and Tutorials
 
-### JavaScript environment
+- [Minimal theme GitHub repository](https://github.com/pages-themes/minimal)
 
-We use [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm) to consistently manage Node.js and its versions in our projects that use JavaScript. To install, paste the following command into your Terminal application and run
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-```
-
-This will install `nvm` as a CLI, which will allow you to install and use various releases of the Node.js software. The installation should also have updated some of your system files that enable use of the `nvm` CLI. To verify your installation, run
-
-```bash
-command -v nvm
-```
-
-which should output `nvm` if successful.
-
-#### Node
-
-Once NVM is installed, you're ready to setup your default version of Node.js for working on CiCL projects using JavaScript. Start by running
-
-```bash
-nvm install 18.18.2
-nvm alias default 18.18.2
-```
-
-Then, to check the Node.js version, run
-
-```bash
-node -v
-```
-
-which should output `v18.18.2`.
-
-#### Node Package Manager (NPM)
-
-Check the installation of Node Package Manager (NPM) that comes with Node.js and make sure it has the correct version by running
-
-```bash
-npm -v
-```
-
-which should output `v9.8.1` or higher.
+More tutorials on github pages, markdown and Jekyll can be found here:
+- [GitHub pages basics](https://help.github.com/categories/github-pages-basics/)
+- [GitHub basic writing and formatting syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+- [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+- [Jekyll front matter](https://jekyllrb.com/docs/frontmatter/)
