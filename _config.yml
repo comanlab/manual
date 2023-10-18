@@ -7,8 +7,6 @@ navigation:
     url: /
   - title: Getting started
     url: getting-started
-  - title Developer environment
-    url: getting-started/developer-environment
 
 # Site theme adapted from https://kbsezginel.github.io/gh-pages-template/
 #
